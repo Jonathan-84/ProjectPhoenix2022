@@ -1,14 +1,16 @@
 {
   "name": "projectphoenix2022",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "http://Jonathan-84.github.io/ProjectPhoenix2022",
+  "private": false,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
