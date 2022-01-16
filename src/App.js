@@ -6,10 +6,12 @@ import './App.css';
 function App() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
+      <>
       <Switch>
       <Route exact path= {'/home'} component={Home}/> 
       <Route render={() => <Redirect to={'/home'} />} />
       </Switch>
+      </>
       </HashRouter>
        
     

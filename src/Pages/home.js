@@ -22,7 +22,7 @@ let hour = currentDate.getHours();
 
 <br></br>
 <div className="d-flex mt-auto justify-content-center">
-<p> {greetingText()} More information will follow </p>
+<p> {greetingText()} More information will follow. </p>
 </div>
 </div>
     )
