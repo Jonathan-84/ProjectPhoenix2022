@@ -17,30 +17,36 @@ function Navbar(){
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <ul>
-                <Link to={"/capital"} className="nav-text">About Me</Link>
+                <Link to={"/aboutme"} className="nav-text">About Me</Link>
                 </ul>
-                <ul>
-                <Link to={"/lowercase"} className="nav-text">Portfolio</Link>
-                </ul>
-                <ul>
-                  <Link to={"/numbers"}className="nav-text">Fun</Link>
-                </ul>
-          
-                   
                 <ul className="nav-item dropdown">
-        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/sightwords"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Let's Connect
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/portfolio"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Portfolio
         </Link>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <ul>
-                <Link to={"/sightcards"} className="nav-text">Email</Link>
+                <Link to={"/uxportfolio"} className="nav-text"> UX Portfolio</Link>
                 </ul>
                 <ul>
-                  <Link to={"/sightrandom"}className="nav-text">Social</Link>
+                  <Link to={"/codeportfolio"}className="nav-text">Coding Portfolio</Link>
                </ul>
                   </div>
       </ul>
-   
+                   
+                <ul className="nav-item dropdown">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/contactme"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Let's Connect
+        </Link>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a className="nav-text" href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message">
+                  Email Me</a></li>
+                <li><a className="nav-text" href="https://github.com/Jonathan-84" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a className="nav-text" href="https://www.linkedin.com/in/jrobinson8" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                  </div>
+      </ul>
+      <ul>
+                  <Link to={"/fun"}className="nav-text">Fun</Link>
+                </ul>
                
                 
        </ul>

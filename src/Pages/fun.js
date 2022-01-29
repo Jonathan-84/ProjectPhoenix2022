@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-function AboutMe(){
+function Fun(){
 
 
 
@@ -12,14 +12,14 @@ function AboutMe(){
     return (
       
         <div className='col'>
-<h2 className='text-center'>About Me</h2>
+<h2 className='text-center'>Fun</h2>
 
 <br></br>
 <div className="d-flex mt-auto justify-content-center">
-<p>  Hold my place  </p>
+<p>  Add gamified fun piece here...  </p>
 </div>
 </div>
     )
     };
 
-  export default AboutMe;
+  export default Fun;
