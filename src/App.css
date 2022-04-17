@@ -6,6 +6,24 @@
   height: 40vmin;
   pointer-events: none;
 }
+.main-color {
+  background-color: #61dafb;
+  
+}
+
+.sidebar-btn-wrapper, .side-style{
+  background-color: #964B00;
+
+}
+
+
+@media only screen and (max-width: 980px) {
+  .game-on {
+    visibility: hidden;
+    display: none;
+  }
+  }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -37,6 +55,9 @@
   }
 }
 
+.negative-p {
+  padding-bottom: 5px;
+}
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
@@ -100,8 +121,6 @@
 }
 
 @media only screen and (min-device-width: 800px) {
-
-
 
     .project {
     max-height: 50%;

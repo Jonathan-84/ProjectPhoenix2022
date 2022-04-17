@@ -23,12 +23,11 @@ export default class Portfolio extends Component {
 <br></br>
 <div className="container-fluid col-7 p-1 ">
 <div className=" row d-flex justify-content-center align-items-center">
-  <div className='col-md border bg-info rounded m-1'>
+  {/* <div className='col-md border bg-info rounded m-1'>
 <h2 className='text-center text-white'>UX</h2>
 <Link to={"/uxportfolio"} className="nav-text">
-  {/*<img  alt="screenshot of card format" src={cardimage}  className="sightcard"/> */}
   </Link>
-  </div>
+  </div> */}
   <div className='col-md border bg-info rounded m-1'>
 <h2 className='text-center text-white'>Coding</h2>
 <Link to={"/codeportfolio"} className="nav-text">

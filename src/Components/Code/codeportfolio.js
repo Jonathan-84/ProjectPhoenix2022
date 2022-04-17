@@ -26,13 +26,15 @@ export default class CodePortfolio extends Component {
   <br></br>
   
        
-  <div className="card-columns m-1 mt-5 fs-4">
+  <div className="d-flex col">
+      <div className="row">
   {Projects.map((e)=>{
          return (
          <Cards ProjectName={e.ProjectName} Photo={e.Photo} Site={e.Site} GitHubURL={e.GitHubURL} 
          Description={e.Description} PicsAlt={e.PicsAlt} Technologies={e.Technologies}/>
        );})}
           </div>
+       </div>
        </div>
   
   

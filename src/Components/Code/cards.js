@@ -10,33 +10,31 @@ function Cards (props){
 
     
     <div className="flip-container container " ontouchstart="this.classList.toggle('hover');">
-	<div className="flipper row card text-info bg-white border-info col-6 m-1 mt-5 fs-4">
-		<div className="front">
-        <div className="card-body">
-       
+	<div className="flipper card p-5">
+       {/* Front of Card Design*/}
+
+		<div className="front rounded border border-success justify-content-center">
       <img className="img-fluid" src= {props.Photo}
       alt={props.PicAlt}/>
-      </div>
 		</div>
-		<div className="back col ">
-        <div className='d-flex justify-content-center row'>
-       {/* <div className="card-title text-center font-weight-bold display-4">{props.ProjectName}</div>*/}
-  {/*<button onClick={() => { ref.current.toggle(); }}> Toggle via button</button>*/}
-  <h5 className="card-title mobile-font">{props.ProjectName}</h5>
+      {/* Back of Card Design*/}
+		<div className="back col text-success bg-dark rounded ">
+        <div className='d-flex row justify-content-center'>
+  <h4 className="card-title text-white mobile-font p-1">{props.ProjectName}</h4>
   <br></br>
-  <div ClassName="row">
- <a href={props.Site} className="mobile-font">Check It Out</a>
- </div>
- <div ClassName="row">
- <a href={props.GitHubURL} className="mobile-font">GitHub Repo</a>
- </div>
- <div ClassName="row">
- <p className="card-text mobile-font"><span className="font-weight-bold"> Concept: </span>{props.Description}</p>
- </div>
- <div ClassName="row">
-      <p className="card-text mobile-font mobile-font"><span className="font-weight-bold">Technologies Used:</span>
+  <br></br>
+  
+ 
+ <p className="card-text mobile-font p-1"><span className="font-weight-bold"> Concept: </span>{props.Description}</p>
+ <a href={props.Site} target="_blank" rel="noreferrer"><p className="card-text mobile-font font-weight-bold">Check It Out!</p></a>
+ <br></br>
+ <br></br>
+ 
+ <p className="card-text mobile-font mobile-font p-1"><span className="font-weight-bold">Technologies Used:</span>
        {props.Technologies}</p>
-       </div>
+       <a href={props.GitHubURL} target="_blank" rel="noreferrer"><p className="card-text mobile-font font-weight-bold">Check out GitHub.</p></a>
+ <br></br>
+  <br></br>
  </div>
  </div>
 		</div>
