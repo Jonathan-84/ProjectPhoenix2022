@@ -13,7 +13,7 @@ function Cards (props){
 	<div className="flipper card p-5">
        {/* Front of Card Design*/}
 
-		<div className="front rounded border border-success justify-content-center">
+		<div className="front bg-light rounded border border-success justify-content-center">
       <img className="img-fluid" src= {props.Photo}
       alt={props.PicAlt}/>
 		</div>

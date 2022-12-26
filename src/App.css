@@ -8,7 +8,37 @@
 }
 .main-color {
   background-color: #61dafb;
+}
+
+.gyro {
+ background-image: url("./assets/images/Hero.JPG");
+ background-size: cover;
+ height: 90vh;
+position: relative;
+opacity: .7;
+overflow: hidden;
+}
+
+
+
+
+/* .top-left
+{ position: absolute; left:0; top:0; } */
+
+
+.verticaltext {
+  transform: rotate(-90deg);
+  transform-origin: right, top;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin:right, top;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin:right, top;
   
+}
+
+
+.fix {
+  padding: 0px 4px;
 }
 
 .sidebar-btn-wrapper, .side-style{

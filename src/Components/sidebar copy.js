@@ -18,22 +18,15 @@ const Sidebar = () => {
           <CDBSidebarMenu >
             <CDBSidebarMenuItem icon="user"><Link to={"/aboutme"}>About Me</Link></CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="briefcase"><Link to={"/codeportfolio"}>Projects</Link></CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="comments" iconType="solid" ><a href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message">
-            Let's Get Social </a>
+            <CDBSidebarMenuItem icon="comments" iconType="solid" ><Link to={"/contactme"}>
+            Let's Get Social </Link>
             </CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="gamepad" iconType="solid" className="game-on">
-              Let's Play A Game
+            <CDBSidebarMenuItem icon="gamepad" iconType="solid" className="game-on" ><Link to={"/fun"}>
+              Let's Play A Game</Link>
             </CDBSidebarMenuItem>
             <br></br>
         <br></br>
-        <CDBSidebarMenuItem>
-        <a href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer' className='border border-white rounded'><span className="fab fa-github"> </span>&nbsp;   &nbsp;GitHub 
-       </a>
-            </CDBSidebarMenuItem>
-            <CDBSidebarMenuItem>
-            <a href="https://www.linkedin.com/in/jrob84" target="_blank" rel='noreferrer' className='border border-white rounded'><span className="fab fa-linkedin-square"></span>&nbsp;&nbsp;   LinkedIn 
-            </a>
-            </CDBSidebarMenuItem>
+        
           </CDBSidebarMenu>
         </CDBSidebarContent>
  
@@ -43,9 +36,15 @@ const Sidebar = () => {
             className="sidebar-btn-wrapper"
             style={{padding: '20px 5px'}}
           >
-            Sidebar Footer
+            <div>
+           <a href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer'><span className=" text-white fa-lg fix fab fa-github"></span></a>
+           </div>
+           <br></br>
+           <div>
+          <a href="https://www.linkedin.com/in/jrob84" target="_blank" rel='noreferrer' ><span className="text-white fa-lg fab fa-linkedin-square"></span>
+            </a>
+            </div>
           </div>
-          
         </CDBSidebarFooter>
       </CDBSidebar>
   );

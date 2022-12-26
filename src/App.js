@@ -3,11 +3,12 @@ import UXPortfolio from './Components/UX/uxportfolio.js';
 import CodePortfolio from './Components/Code/codeportfolio.js';
 import Home from './Pages/home';
 import AboutMe from './Pages/aboutme.js';
-import Sidebar from './Components/sidenav';
+import Sidebar from './Components/sidebar';
 import Fun from './Pages/fun.js';
 import ContactMe from './Pages/contactme.js'
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-import Header from './Components/header.js'
+//import Header from './Components/header.js',
+//import Social from './Components/social.js'
 import React from 'react';
 import './App.css';
 
@@ -16,11 +17,12 @@ function App() {
     <HashRouter basename={process.env.PUBLIC_URL}>
       <>
       <div className="row main-color text-white">
-      <div className="col-2 min-vh-100">
+       <div className="container-fluid">
+    <div className="row flex-nowrap">
+        <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
         <Sidebar/>
         </div>
-        <div className="col-10">
-      <Header className="bg-light" />
+        <div className="col py-3">
       <Switch>
       <Route exact path= {'/home'} component={Home}/> 
       <Route exact path= {'/aboutme'} component={AboutMe}/>
@@ -32,7 +34,10 @@ function App() {
       <Route render={() => <Redirect to={'/home'} />} />
       </Switch>
       </div>
-      </div>
+</div>
+</div>
+</div>
+     
       </>
       </HashRouter>
        
