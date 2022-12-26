@@ -10,7 +10,7 @@ function Cards (props){
 
     
     <div className="flip-container container " ontouchstart="this.classList.toggle('hover');">
-	<div className="flipper card p-5">
+	<div className="flipper card m-4">
        {/* Front of Card Design*/}
 
 		<div className="front bg-light rounded border border-success justify-content-center">
