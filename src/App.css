@@ -76,62 +76,14 @@ overflow: hidden;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .negative-p {
   padding-bottom: 5px;
 }
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
+
+.cards-width {
+max-width: 25;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-
-
 @media only screen and (max-device-width: 480px) {
 
   .mobile-font {

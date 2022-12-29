@@ -13,7 +13,7 @@ export default class CodePortfolio extends Component {
  
     return (
       <>
-      <div className='mb-0'>
+      {/* <div className='mb-0'> */}
       <div className="col d-flex justify-content-center mt-3 ">
         {/*Text Container*/}      
         <div className="rounded text-white bg-info text-center sight-title">
@@ -24,21 +24,21 @@ export default class CodePortfolio extends Component {
         </div>
      
   <br></br>
-  
-       
-  <div className="d-flex col">
-      <div className="row">
+ 
+
+  <div className="row row-cols-md-2 row-cols-auto g-4">
+
+   
+
   {Projects.map((e)=>{
          return (
          <Cards ProjectName={e.ProjectName} Photo={e.Photo} Site={e.Site} GitHubURL={e.GitHubURL} 
          Description={e.Description} PicsAlt={e.PicsAlt} Technologies={e.Technologies}/>
        );})}
           </div>
-       </div>
-       </div>
-  
-  
-  
+
+      
+          {/* </div> */}
   </>
     )
   }

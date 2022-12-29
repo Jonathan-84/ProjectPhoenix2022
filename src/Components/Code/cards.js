@@ -1,26 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
 /* Change layout in future to add more randomized testing ability. For now, list sight words
 if possible make the second side only appear on click. So word, click to flip card over for definition
 and sentence*/
  
 function Cards (props){
-
+  const ref = useRef();
 
   return (
-
-    
-    <div className="flip-container container " ontouchstart="this.classList.toggle('hover');">
-	<div className="flipper card m-4">
+    // // <div className="card-columns p-3">
+    // <div className="card-group">
+    // <div className=" card cards-width m-4 text-success bg-dark rounded">
+<Flippy
+      flipOnHover={false} // default false
+      flipOnClick={true} // default false
+      flipDirection="horizontal" // horizontal or vertical
+      ref={ref} // to use toggle method like ref.curret.toggle()
+      // if you pass isFlipped prop component will be controlled component.
+      // and other props, which will go to div
+  >
+     <div className="card bg-info h-100 m-4">
+{/* <div  className="card-body bg-info" > */}
+<div  className="col">
        {/* Front of Card Design*/}
+<FrontSide>
 
-		<div className="front bg-light rounded border border-success justify-content-center">
+		<div className="bg-light rounded border border-success justify-content-center">
+      <div>
       <img className="img-fluid" src= {props.Photo}
       alt={props.PicAlt}/>
 		</div>
+    </div>
+
+    </FrontSide>
       {/* Back of Card Design*/}
-		<div className="back col text-success bg-dark rounded ">
-        <div className='d-flex row justify-content-center'>
-  <h4 className="card-title text-white mobile-font p-1">{props.ProjectName}</h4>
+      <BackSide>
+   
+  <h4 className="card-title  text-white mobile-font p-1">{props.ProjectName}</h4>
   <br></br>
   <br></br>
   
@@ -33,12 +49,15 @@ function Cards (props){
  <p className="card-text mobile-font mobile-font p-1"><span className="font-weight-bold">Technologies Used:</span>
        {props.Technologies}</p>
        <a href={props.GitHubURL} target="_blank" rel="noreferrer"><p className="card-text mobile-font font-weight-bold">Check out GitHub.</p></a>
- <br></br>
-  <br></br>
+
+ </BackSide>
  </div>
- </div>
-		</div>
-	</div>
+  </div>
+  {/* </div> */}
+
+ {/* </div>
+ </div> */}
+  </Flippy>
 
 
   )
