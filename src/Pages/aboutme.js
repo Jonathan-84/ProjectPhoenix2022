@@ -8,6 +8,15 @@ import React from 'react';
 
 function AboutMe(){
 
+  
+//   const greetingText = () => {
+//     let currentDate = new Date();
+// let hour = currentDate.getHours();
+//     if (hour >= 12 && hour <=17) return "Good Afternoon"
+//     else if (hour >= 18) return "Good Evening"
+//     else return "Good Morning"
+//   }
+
     return (
       <>
         <div className='col'>
@@ -17,7 +26,7 @@ function AboutMe(){
 </div>
 </div>
 <h2 className='text-center'>About Me</h2>
-
+{/* <h1 > {greetingText()}, I'm Jonathan!   </h1> */}
 <br></br>
 <div className="d-flex mt-auto justify-content-center">
 <p>  After spending 15 years in Sales and Marketing, I transitioned into Software Development. Providing an opportunity to apply his skills and experience towards tackling development projects. 
