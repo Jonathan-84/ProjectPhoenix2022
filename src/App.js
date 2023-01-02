@@ -23,7 +23,7 @@ function App() {
         <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
         <Sidebar/>
         </div>
-        <div className="col py-3">
+        <div className="col home-back py-3">
       <Switch>
       <Route exact path= {'/home'} component={Home}/> 
       <Route exact path= {'/aboutme'} component={AboutMe}/>

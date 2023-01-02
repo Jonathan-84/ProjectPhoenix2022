@@ -16,7 +16,7 @@ export default class CodePortfolio extends Component {
       {/* <div className='mb-0'> */}
       <div className="col d-flex justify-content-center mt-3 ">
         {/*Text Container*/}      
-        <div className="rounded text-white bg-info text-center sight-title">
+        <div className="rounded text-white bg-secondary text-center sight-title">
       <h1 className=""> Projects </h1>
       <p>Click on the screenshot to flip the card over. On the card's backside, you will
         find the App Name, Website's URL, the App Description, Tech Stack used, and the GitHub Repo's URL.  </p>

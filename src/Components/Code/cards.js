@@ -20,7 +20,7 @@ function Cards (props){
       // and other props, which will go to div
   >
     
-     <div className="card bg-info h-100 text-center m-4">
+     <div className="card bg-secondary h-100 text-center m-4">
 
 <div  className="col">
   <div></div>

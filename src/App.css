@@ -10,16 +10,24 @@
   background-color: #61dafb;
 }
 
-.gyro {
- background-image: url("./assets/images/Hero.JPG");
+/* .gyro {
+ background-image: url("./assets/images/Jonathan Robinson.png");
  background-size: cover;
  height: 90vh;
 position: relative;
 opacity: .7;
 overflow: hidden;
+} */
+     /* .bg-image { 
+    width: 100%; 
+    height: 600px; 
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}  */
+
+.home-back {
+  background-color: #121f48
 }
-
-
 
 
 /* .top-left
