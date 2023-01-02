@@ -19,13 +19,15 @@ function Cards (props){
       // if you pass isFlipped prop component will be controlled component.
       // and other props, which will go to div
   >
-     <div className="card bg-info h-100 m-4">
-{/* <div  className="card-body bg-info" > */}
+    
+     <div className="card bg-info h-100 text-center m-4">
+
 <div  className="col">
+  <div></div>
        {/* Front of Card Design*/}
 <FrontSide>
 
-		<div className="bg-light rounded border border-success justify-content-center">
+		<div className="bg-light rounded border border-success text-wrap">
       <div>
       <img className="img-fluid" src= {props.Photo}
       alt={props.PicAlt}/>
@@ -35,9 +37,8 @@ function Cards (props){
     </FrontSide>
       {/* Back of Card Design*/}
       <BackSide>
-   
+   {/* <div  className="card-body" > */}
   <h4 className="card-title  text-white mobile-font p-1">{props.ProjectName}</h4>
-  <br></br>
   <br></br>
   
  
@@ -49,14 +50,10 @@ function Cards (props){
  <p className="card-text mobile-font mobile-font p-1"><span className="font-weight-bold">Technologies Used:</span>
        {props.Technologies}</p>
        <a href={props.GitHubURL} target="_blank" rel="noreferrer"><p className="card-text mobile-font font-weight-bold">Check out GitHub.</p></a>
-
  </BackSide>
  </div>
   </div>
-  {/* </div> */}
 
- {/* </div>
- </div> */}
   </Flippy>
 
 

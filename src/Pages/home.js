@@ -11,7 +11,6 @@ function Home(){
   const greetingText = () => {
     let currentDate = new Date();
 let hour = currentDate.getHours();
-    console.log(hour)
     if (hour >= 12 && hour <=17) return "Good Afternoon"
     else if (hour >= 18) return "Good Evening"
     else return "Good Morning"

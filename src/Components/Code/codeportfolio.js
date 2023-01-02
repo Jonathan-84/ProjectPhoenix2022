@@ -18,26 +18,27 @@ export default class CodePortfolio extends Component {
         {/*Text Container*/}      
         <div className="rounded text-white bg-info text-center sight-title">
       <h1 className=""> Projects </h1>
-      <p>Click each card to flip them over and see a sample sentence. Before flipping it over, 
-        see if your child can recognize the word and provide their own sentence example. </p>
+      <p>Click on the screenshot to flip the card over. On the card's backside, you will
+        find the App Name, Website's URL, the App Description, Tech Stack used, and the GitHub Repo's URL.  </p>
         </div>
         </div>
      
   <br></br>
  
 
-  <div className="row row-cols-md-2 row-cols-auto g-4">
+  <div className="row row-cols-md-2 g-4">
 
    
 
   {Projects.map((e)=>{
          return (
          <Cards ProjectName={e.ProjectName} Photo={e.Photo} Site={e.Site} GitHubURL={e.GitHubURL} 
-         Description={e.Description} PicsAlt={e.PicsAlt} Technologies={e.Technologies}/>
+         Description={e.Description} PicsAlt={e.PicsAlt} Technologies={e.Technologies} Fun={e.Fun}/>
        );})}
           </div>
 
-      
+      <br></br>
+      <br></br>
           {/* </div> */}
   </>
     )

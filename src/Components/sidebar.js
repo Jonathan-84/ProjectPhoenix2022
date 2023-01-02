@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Tracker from './GameTracker/tracker';
 
 
 /// Need to add icons... Plan on keeping this version
@@ -29,32 +30,21 @@ const Sidebar = () => {
                             <Link to={"/codeportfolio"} className="nav-link px-0 align-middle">
                              <i class="fs-4 fa-solid fa-laptop-code"></i> <span className="fs-6  d-none d-sm-inline ms-1"> Portfolio</span> </Link>
                     </li>
-                {/*} 
-                
-                /// If I finish the UX course and need to add the UX Portfolio... I'll use the opening POrtfolio drop down
-                <li>
-                   
-                    <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                    <i className="fs-4 bi bi-briefcase"></i> <span className="fs-6  ms-1 d-none d-sm-inline"> Open Portfolio</span> </a>
-                        <ul className="collapse show nav flex-column px-0 align-middle" id="submenu1" data-bs-parent="#menu">
-                            <li>
-                            <Link to={"/codeportfolio"} className="nav-link px-0 align-middle">
-                                <i className=" fs-4 bi bi-laptop"></i> <span className="fs-6  d-none d-sm-inline ms-1"> Coding</span> </Link>
-                            </li>
-                            <li>
-                            <Link to={"/uxportfolio"} className="nav-link px-0 align-middle">
-                                <i className=" fs-4 bi bi-map"></i> <span className="fs-6  d-none d-sm-inline ms-1"> UX Design</span> </Link>
-  </li>
-                        </ul>
-                    </li>
-                    */}
                     <li className="nav-item">
-                    <a className="nav-link px-0 align-middle" href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message"> <i class="fs-4 fa-regular fa-envelope"></i> <span className="fs-6 d-none d-sm-inline">
-                            Email Me</span></a>
+                    <a className="nav-link px-0 align-middle" href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message"> <i class="fs-4 fa-regular fa-envelope"></i> <span className="fs-6 d-none d-sm-inline"> Email Me </span> </a>
                     </li>
                     <li>
                     <Link to={"/fun"} className="nav-link px-0 d-none d-lg-block">
-                    <i class="fs-4 fa-solid fa-gamepad"></i> <span className="d-none d-sm-inline">Challenge</span> </Link>
+                    <i class="fs-4 fa-solid fa-gamepad"></i> <span className="d-none d-sm-inline">Challenge <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">🏆</button></span></Link> 
+                    
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" href={"/🎮"} data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <Tracker/>
+  </div>
+</div>
                     </li>
                     </ul>
                     {/*  Right after this, it's the Bttom UL*/}
