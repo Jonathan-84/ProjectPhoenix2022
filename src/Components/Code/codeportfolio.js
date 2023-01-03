@@ -26,7 +26,7 @@ export default class CodePortfolio extends Component {
   <br></br>
  
 
-  <div className="row row-cols-md-2 g-4">
+  <div className="row row-cols-1 row-cols-lg-2 g-5">
 
    
 
