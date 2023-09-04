@@ -13,7 +13,9 @@ import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 
+
 function App() {
+
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <>
@@ -24,7 +26,9 @@ function App() {
         <Sidebar/>
         </div>
         <div className="col home-back py-3">
-      <Switch>
+       
+      <Switch >
+     
       <Route exact path= {'/home'} component={Home}/> 
       <Route exact path= {'/aboutme'} component={AboutMe}/>
       <Route exact path= {'/portfolio'} component={Portfolio}/>
@@ -34,10 +38,12 @@ function App() {
       <Route exact path= {'/🎮'} component={Tracker}/>
       <Route exact path= {'/contactme'} component={ContactMe}/>
       <Route render={() => <Redirect to={'/home'} />} />
+
       </Switch>
       </div>
-    
+      
 </div>
+{/* <Tracker/> */}
 </div>
 </div>
      

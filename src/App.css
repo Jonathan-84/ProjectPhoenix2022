@@ -10,6 +10,7 @@
   background-color: #61dafb;
 }
 
+
 /* .gyro {
  background-image: url("./assets/images/Jonathan Robinson.png");
  background-size: cover;
@@ -55,11 +56,26 @@ overflow: hidden;
 }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 481px) {
   .game-on {
     visibility: hidden;
     display: none;
   }
+
+  .mobile-font {
+    font-size: 20px;
+  }
+
+  .mobile-overflow {
+    overflow-y: auto;
+  
+  }
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+
   }
 
 
@@ -92,10 +108,10 @@ overflow: hidden;
 .cards-width {
 max-width: 25;
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
 
   .mobile-font {
-      font-size: 12px;
+      font-size: 11px;
     }
 
     .mobile-column {
@@ -108,13 +124,20 @@ max-width: 25;
       width: 90vw;
     }
 
+    .body-cards {
+      margin-bottom: 3.5rem;
+      }
+
+      .mobile-overflow {
+        overflow-y: scroll;
+      
+      }
+
 }
 
-@media only screen and (min-device-width: 800px) {
+/* @media only screen and (min-device-width: 800px) {
 
-    .project {
-    max-height: 50%;
-    max-width: 50%;
-    
-    }
-}
+  .mobile-font {
+    font-size: 20px;
+  }
+} */

@@ -9,34 +9,41 @@ function Cards (props){
 
   return (
     // <div className="card-columns p-3">
-    <div className="card-group">
-    <div className=" card  h-100 text-center m-2 text-white bg-secondary">
-    <div  className="col">
+    <div className="card-group ">
+    <div className=" card  text-center text-white bg-secondary ">
+    {/* <div  className="col h-100 "> */}
      
 <Flippy
+// className="w-100 h-100 pb-5 bg-secondary "
       flipOnHover={false} // default false
       flipOnClick={true} // default false
       flipDirection="horizontal" // horizontal or vertical
       ref={ref} // to use toggle method like ref.curret.toggle()
       // if you pass isFlipped prop component will be controlled component.
       // and other props, which will go to div
+
+      
   >
 
-   
+
 
 
   
        {/* Front of Card Design*/}
-<FrontSide>
+<FrontSide
+className="min-vh-100 bg-secondary " >
 
 
-      <img className="img-fluid  " src= {props.Photo}
+      <img className="card-img" src= {props.Photo}
       alt={props.PicAlt}/>
 
     
     </FrontSide>
       {/* Back of Card Design*/}
-      <BackSide>
+      <BackSide 
+      className="min-vh-100 bg-secondary "
+      // className='mobile-overflow pb-5'
+      >
    
    {/* <div className="card bg-secondary h-100 text-center m-4"> */}
   <h4 className="card-title text-white mobile-font">{props.ProjectName}</h4>
@@ -56,7 +63,9 @@ function Cards (props){
 
 
   </Flippy>
-  </div>  </div>  </div>  
+  </div>  
+  </div>  
+  // </div>  
 
   )
 }
