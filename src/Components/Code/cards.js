@@ -31,18 +31,22 @@ function Cards (props){
   
        {/* Front of Card Design*/}
 <FrontSide
-className="min-vh-100 bg-secondary " >
+className="min-vh-100 bg-secondary "
+// className="portfoliodesktoptiles bg-secondary "
+ >
 
 
-      <img className="card-img" src= {props.Photo}
+      <img className="h-100 mw-100" src= {props.Photo}
       alt={props.PicAlt}/>
 
     
     </FrontSide>
       {/* Back of Card Design*/}
       <BackSide 
-      className="min-vh-100 bg-secondary "
-      // className='mobile-overflow pb-5'
+      // className="min-vh-100 bg-secondary "
+      className="overflow-auto "
+      // className="portfoliodesktoptiles bg-secondary "
+  
       >
    
    {/* <div className="card bg-secondary h-100 text-center m-4"> */}

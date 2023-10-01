@@ -20,7 +20,7 @@ const Sidebar = () => {
                 <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li className="nav-item">
                     <Link to={"/aboutme"} className="nav-link align-middle px-0">
-                    <i className="fs-4 fa-solid fa-user-astronaut"></i> <span className="fs-6 ms-1 d-none d-sm-inline">About Me</span>
+                    <i className="fs-4 fa-solid fa-user-astronaut"></i> <span className="fs-6 ms-1 d-none d-sm-inline">ME</span>
                         </Link>
                     </li>
                     <li>
@@ -31,17 +31,17 @@ const Sidebar = () => {
                              <i class="fs-4 fa-solid fa-laptop-code"></i> <span className="fs-6  d-none d-sm-inline ms-1"> Portfolio</span> </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link px-0 align-middle" href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message"> <i class="fs-4 fa-regular fa-envelope"></i> <span className="fs-6 d-none d-sm-inline"> Email Me </span> </a>
+                    <a className="nav-link px-0 align-middle" href = "mailto:jonathan.robinson@outlook.com?subject = Feedback&body = Message"> <i class="fs-4 fa-regular fa-envelope"></i> <span className="fs-6 d-none d-sm-inline"> Email </span> </a>
                     </li>
                     <li>
-                    <Link to={"/fun"} className="nav-link px-0 d-none d-lg-block">
+                    <Link to={"/fun"} className="nav-link px-0 d-none d-lg-block game-on">
                     <i class="fs-4 fa-solid fa-gamepad"></i> <span className="d-none d-sm-inline">Challenge <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">🏆</button></span></Link> 
                     
                     <div class="offcanvas offcanvas-end" data-bs-scroll="true" href={"/🎮"} data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header">
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body game-on">
     <Tracker/>
   </div>
 </div>

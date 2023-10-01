@@ -47,7 +47,7 @@ overflow: hidden;
 
 
 .fix {
-  padding: 0px 4px;
+  padding: 0px 3px;
 }
 
 .sidebar-btn-wrapper, .side-style{
@@ -55,8 +55,122 @@ overflow: hidden;
 
 }
 
+@media screen and (min-width: 1280px)
+{
+  .mobile-font {
+    font-size: 20px;
+  }
+/* 
+  .portfoliodesktoptiles {
+    min-height: 100vh
+  } */
 
-@media only screen and (min-width: 481px) {
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 4px;
+    width: 90vw;
+  }
+
+  .body-cards {
+    margin-bottom: 3.5rem;
+    }
+
+    .mobile-overflow {
+      overflow-y: scroll;
+    
+    }
+
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-width: 680px) and (orientation: landscape) 
+{
+  .mobile-font {
+    font-size: 15px;
+  }
+
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 4px;
+    width: 90vw;
+  }
+
+  .body-cards {
+    margin-bottom: 3.5rem;
+    }
+
+    .mobile-overflow {
+      overflow-y: scroll;
+    
+    }
+
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-width: 680px) and (orientation: portrait)
+{
+  .mobile-font {
+    font-size: 20px;
+  }
+
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 4px;
+    width: 90vw;
+  }
+
+  .body-cards {
+    margin-bottom: 3.5rem;
+    }
+
+    .mobile-overflow {
+      overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape)
+{
+  .game-on {
+    visibility: hidden;
+    display: none;
+  }
+  .mobile-font {
+    font-size: 20px;
+  }
+
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 4px;
+    width: 90vw;
+  }
+
+  .body-cards {
+    margin-bottom: 3.5rem;
+    }
+
+    .mobile-overflow {
+      overflow-y: scroll;
+    }
+}
+
+/* #### Tablet Portrait #### */
+@media only screen and (min-device-width: 834px) and (orientation: portrait) {
   .game-on {
     visibility: hidden;
     display: none;
@@ -74,70 +188,25 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
   }
+}
+/* #### Tablet landcape#### */
+@media only screen and (max-device-width: 1190px) and (orientation: landscape) {
 
-
+  .game-on {
+    visibility: hidden;
+    display: none;
   }
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
-.negative-p {
-  padding-bottom: 5px;
-}
-
-.cards-width {
-max-width: 25;
-}
-@media only screen and (max-width: 480px) {
-
-  .mobile-font {
-      font-size: 11px;
-    }
-
-    .mobile-column {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .feature {
-      margin: 4px;
-      width: 90vw;
-    }
-
-    .body-cards {
-      margin-bottom: 3.5rem;
-      }
-
-      .mobile-overflow {
-        overflow-y: scroll;
-      
-      }
-
-}
-
-/* @media only screen and (min-device-width: 800px) {
 
   .mobile-font {
     font-size: 20px;
   }
-} */
+
+  .mobile-overflow {
+    overflow-y: auto;
+  
+  }
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
