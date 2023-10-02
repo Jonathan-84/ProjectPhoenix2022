@@ -1,23 +1,22 @@
 {
   "short_name": "Jonathan R.",
-  "name": "Jonathan R.",
-  "start_url": "./bcard.html",
+  "name": "Jonathan R. Portfolio",
   "icons": [
     {
-    "src": "../src/images/assets/apple-touch-icon.png",
-    "sizes": "180x180",
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "512x512",
     "type": "image/png",
     "purpose": "any maskable"
-  },
-  {
-    "src": "../src/images/assets/android-chrome-192x192.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "any maskable"
-  }
+    }
   ],
+  "start_url": "./bcard.html",
   "theme_color": "#0D6EFD",
   "background_color": "#0D6EFD",
   "display": "standalone"
-  
 }
