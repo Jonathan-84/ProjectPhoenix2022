@@ -2,7 +2,6 @@
   "short_name": "Jonathan R.",
   "name": "Jonathan R.",
   "start_url": "./bcard.html",
-    "scope": "./",
   "icons": [
     {
     "src": "../src/images/assets/apple-touch-icon.png",
@@ -20,4 +19,5 @@
   "theme_color": "#0D6EFD",
   "background_color": "#0D6EFD",
   "display": "standalone"
+  
 }
